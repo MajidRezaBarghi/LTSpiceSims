@@ -1,0 +1,6 @@
+Questionable use of curly braces in "c1 n003 0 {x}"
+    Error: undefined symbol in: "[x]"
+Questionable use of curly braces in "c2 vsall-key n001 {x}"
+    Error: undefined symbol in: "[x]"
+Circuit: * Z:\home\reza\Documents\CrematPreamp.asc
+

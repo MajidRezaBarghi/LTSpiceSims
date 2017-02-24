@@ -1,0 +1,24 @@
+* Z:\home\rbarghi\Dropbox\LTspiceSims\SinglePoleCircuit.asc
+Cin1 VPoleZero ActiveLowPass 220p
+RP1 VPoleZero ActiveLowPass 2k
+Rin1 VPoleZero 0 80
+V§Psup1 Vp 0 5
+V1 0 Vn 5
+R1 N002 VSensl 100
+R2 ActiveLowPass N002 500
+XU1 0 N002 ActiveLowPass Vp Vn NC_01 LT6200-10
+C1 ActiveLowPass N002 10p
+VSipm1 N004 0 EXP(0 70m 100n 10n 0 472n) AC 1 Rser=100
+R3 N001 VPoleZero 100
+R4 ActiveLowPass1 N001 500
+XU2 0 N001 ActiveLowPass1 Vp Vn NC_02 LT6200-10
+C2 ActiveLowPass1 N001 10p
+VSipm2 N003 0 EXP(0 50m 200n 10n 0 472n) AC 1 Rser=100
+VSipm3 N005 0 EXP(0 90m 400n 10n 0 472n) AC 1 Rser=100
+R5 N003 VSensl .01
+R6 VSensl N005 .01
+R7 VSensl N004 .01
+.tran 1000n
+.lib LTC2.LIB
+.backanno
+.end
